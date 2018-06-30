@@ -1,0 +1,21 @@
+{
+  "name": "ocaml-ssl",
+  "bsc-flags": "-w -27 -g",
+  "warnings": {
+    "number": "-40+6+7-26-27+32..39-28-44+45",
+    "error": "+8",
+  },
+  "sources": [
+    "./src",
+    {"dir": "test", "type": "dev"},
+  ],
+  "static-libraries": [
+    "lib/ssl_stubs.o",
+  ],
+  "build-script": "build_script.re",
+  "entries": [{
+    "backend": "native",
+    "main-module": "Test"
+  }],
+  "refmt": 3,
+}
