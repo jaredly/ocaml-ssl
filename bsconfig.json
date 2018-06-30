@@ -12,6 +12,14 @@
   "static-libraries": [
     "lib/ssl_stubs.o",
   ],
+  "c-linker-flags": ["-lssl", "-lcrypto"],
+  // This is an alternative way to link in those libraries.
+  // The former is probably more flexible, but the latter could
+  // be used if I wanted to provide them via npm or something
+  // "static-libraries": [
+  //   "/usr/local/opt/openssl/lib/libcrypto.a",
+  //   "/usr/local/opt/openssl/lib/libssl.a"
+  // ],
   "build-script": "build_script.re",
   "entries": [{
     "backend": "native",
