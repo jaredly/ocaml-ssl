@@ -19,11 +19,6 @@ module type IO = sig
   (** [conn] represents the underlying network flow *)
   type conn
 
-  (** [read_line ic] will read a single line terminated
-      by CR or CRLF from the input channel [ic].  It returns
-      {!None} if EOF or other error condition is reached. *)
-  val read_line : ic -> string option t
-
   (** [read ic len] will block until a maximum of [len] characters
       are read from the input channel [ic].  It returns an
       empty string if EOF or some other error condition occurs
@@ -35,9 +30,4 @@ module type IO = sig
   (** [write oc s] will block until the complete [s] string is
       written to the output channel [oc]. *)
   val write : oc -> string -> unit t
-
-  (** [flush oc] will return when all previously buffered content
-      from calling {!write} have been written to the output channel
-      [oc]. *)
-  val flush : oc -> unit t
 end
