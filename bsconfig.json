@@ -22,18 +22,18 @@
   //   "/usr/local/opt/openssl/lib/libssl.a"
   // ],
   "build-script": "build_script.re",
-  "entries": [{
-    "backend": "native",
-    "main-module": "Test"
-  }, {
-    "backend": "native",
-    "main-module": "Httpserver"
-  }, {
-    "backend": "native",
-    "main-module": "Stalkd"
-  }, {
-    "backend": "native",
-    "main-module": "Stelnet"
-  }],
+  // "entries": [{
+  //   "backend": "native",
+  //   "main-module": "Test"
+  // }, {
+  //   "backend": "native",
+  //   "main-module": "Httpserver"
+  // }, {
+  //   "backend": "native",
+  //   "main-module": "Stalkd"
+  // }, {
+  //   "backend": "native",
+  //   "main-module": "Stelnet"
+  // }],
   "refmt": 3,
 }
