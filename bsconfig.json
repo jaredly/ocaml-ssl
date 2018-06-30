@@ -13,6 +13,7 @@
     "lib/ssl_stubs.o",
   ],
   "c-linker-flags": ["-lssl", "-lcrypto"],
+  "ocaml-libraries": ["thread"],
   // This is an alternative way to link in those libraries.
   // The former is probably more flexible, but the latter could
   // be used if I wanted to provide them via npm or something
@@ -24,6 +25,15 @@
   "entries": [{
     "backend": "native",
     "main-module": "Test"
+  }, {
+    "backend": "native",
+    "main-module": "Httpserver"
+  }, {
+    "backend": "native",
+    "main-module": "Stalkd"
+  }, {
+    "backend": "native",
+    "main-module": "Stelnet"
   }],
   "refmt": 3,
 }

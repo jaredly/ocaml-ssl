@@ -28,7 +28,7 @@
 let certfile = ref "cert.pem"
 let privkey = ref "privkey.pem"
 let port = ref 9876
-let password = ref "toto"
+let password = ref "hello"
 
 let log s =
   Printf.printf "[II] %s\n%!" s
